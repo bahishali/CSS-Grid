@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid</title>
+    <style>
+        .grid-container{
+            display: grid;
+            /* grid-template-areas: 'can can can can can'; */
+            grid-template-areas: 'can can . . .';
+            grid-gap: 10px; 
+            background-color: rgb(32, 119, 194);
+            padding: 10px;
+            
+        }
+        .grid-container>div{
+            background-color: rgb(172, 195, 215);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+
+        }
+        .grid-item1{
+            grid-area: can;
+        }
+
+    </style>
+</head> 
+<body>
+    <div class="grid-container">
+        <div class="grid-item1">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+    </div>
+    
+</body>
+</html>
